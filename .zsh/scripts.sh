@@ -1,33 +1,80 @@
 #!/bin/sh
 
+
+set -e
+
+
+
+
+
+
 # Kudos to @gareth for a one-line solution here!
 last_test() {
   git status -s test/**/*_test.rb | head -n 1 | awk '{ print $2 }' | xargs -I {} ruby -I lib:test {} $=@
 }
 
+# testitOld() {
+#   TESTFILESCHANGED=($(gst --porcelain | grep -Eo "test.*"))  # (..) = array
+
+#   echo "these test files have uncommitted changes:"
+#   echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
+#   echo ""
+
+#   echo -e "Now running \e[95mrake test ${TESTFILESCHANGED[1]}\e[0m"
+#   rake test ${TESTFILESCHANGED[1]} 
+# }
+
+
+
+test_files_changed() {
+  TESTFILESCHANGED=$(gst -s test/**/*_test.rb | awk '{ print $2 }')
+
+  echo "these test files have uncommitted changes:"
+  echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
+  echo ""
+}
+
+run_test() {
+  # http://stackoverflow.com/a/17336953/1358187
+  # Echo the return value out from the previous function, and read into this one
+}
+
 testit() {
-  TESTFILESCHANGED=($(gst --porcelain | grep -Eo "test.*"))  # (..) = array
+  TESTFILESCHANGED=($(gst -s test/**/*_test.rb | awk '{ print $2 }'))  # (..) = array
 
   echo "these test files have uncommitted changes:"
   echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
   echo ""
 
-  echo -e "Now running \e[95mrake test ${TESTFILESCHANGED[1]}\e[0m"
-  rake test ${TESTFILESCHANGED[1]}
+  if [[ $@ ]]; then
+    echo "Running only tests with {$@} in the name"
+    echo "WARNING - this doesn't use spring, so is probably slower than running all the tests"
+    echo -e "Now running \e[95mruby -I lib:test ${TESTFILESCHANGED[1]} -n /$@/\e[0m"
+    ruby -I lib:test ${TESTFILESCHANGED[1]} -n /$@/
+  else
+    echo -e "Now running \e[95mrake test ${TESTFILESCHANGED[1]}\e[0m"
+    rake test ${TESTFILESCHANGED[1]} 
+  fi
 }
 
-testSAM() {
-  TESTFILESCHANGED=($(gst --porcelain | grep -Eo "test.*"))  # (..) = array
-
-  echo "these test files have uncommitted changes:"
-  echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
-  echo ""
-
-  # TODO: Pass "SAM" as an argument, and merge this with testit()
-  echo -e "Now running \e[95mruby -I lib:test ${TESTFILESCHANGED[1]} -n /SAM/\e[0m"
-
-  ruby -I lib:test ${TESTFILESCHANGED[1]} -n /SAM/
+echo_one() {
+  echo $1
 }
+
+echo_and_return_one() {
+  echo $1
+  return "sweet"
+}
+
+echo_all() {
+  echo $@
+  if [[ $@ ]]; then
+    echo "found an arg"
+  else
+    echo "no args found"
+  fi
+}
+
 
 dubquotes() {
   set -e
