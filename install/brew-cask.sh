@@ -10,9 +10,9 @@ apps=(
   flux
   google-chrome
   iterm2
-  karabiner
-  sketch
-  sketch-toolbox
+  # karabiner
+  # sketch
+  # sketch-toolbox
   slack
   sourcetree
   spectacle
@@ -21,11 +21,15 @@ apps=(
 
 brew cask install "${apps[@]}"
 
-# Then install these manually:
-
+### Then install these manually: ###
 # node
 # docker for mac
 # Firefox 46
 # postgresapp
 # sublime-text3
 # oh-my-zsh
+
+### And for capybara, you'll need these:
+###   (see https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit)
+# xcode
+# qt5
