@@ -65,7 +65,7 @@ plugins=(git)
 # export PATH="/Users/samjewell/.rvm/gems/ruby-2.3.0/bin:/Users/samjewell/.rvm/gems/ruby-2.3.0@global/bin:/Users/samjewell/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/samjewell/.rvm/bin"
 PATH=$PATH:/Users/samjewell/.rvm/gems/ruby-2.3.0@bridgeu/bin
 # Add psql to my path
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
+PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
