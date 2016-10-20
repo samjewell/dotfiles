@@ -2,7 +2,6 @@
 # Install Caskroom
 
 brew tap caskroom/cask
-brew install brew-cask
 
 # Install packages
 
@@ -14,10 +13,19 @@ apps=(
   karabiner
   sketch
   sketch-toolbox
+  slack
   sourcetree
   spectacle
-  sublime-text3
   valentina-studio
 )
 
 brew cask install "${apps[@]}"
+
+# Then install these manually:
+
+# node
+# docker for mac
+# Firefox 46
+# postgresapp
+# sublime-text3
+# oh-my-zsh
