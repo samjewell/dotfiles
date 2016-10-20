@@ -13,9 +13,6 @@
 
 # TODO (this repo):
 - prettify `makesymlinks.sh`
-- Install Firefox at version 46
-  + https://github.com/omgmog/install-all-firefox/blob/master/install-all-firefox.sh
-- Rename this repo to a hidden folder .dotfiles
 - Add Sublime-text config to the dotfiles repo
 
 # TODO (Sam):
