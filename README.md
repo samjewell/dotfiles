@@ -12,10 +12,16 @@
 - Add brew cask
 
 # TODO (this repo):
-- prettify `makesymlinks.sh`
+- Backup again, then
+    + Try osx defaults
+    + Try osx dock
+- Improve the `test_files_changed` scripts
+- Open a blank repo on BridgeU
+- Make some PRs into that repo
 - Add Sublime-text config to the dotfiles repo
 
 # TODO (Sam):
+- prettify `makesymlinks.sh`
 - Sort out the gitignore to ignore the coheat folder
 - Save encryption passwords to Lastpass
 - Add Sublime-text config to the dotfiles repo
