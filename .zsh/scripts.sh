@@ -1,84 +1,43 @@
-#!/bin/sh
-
-
-set -e
-
-
-
-
-
-
 # Kudos to @gareth for a one-line solution here!
 last_test() {
   git status -s test/**/*_test.rb | head -n 1 | awk '{ print $2 }' | xargs -I {} ruby -I lib:test {} $=@
 }
 
-# testitOld() {
-#   TESTFILESCHANGED=($(gst --porcelain | grep -Eo "test.*"))  # (..) = array
-
-#   echo "these test files have uncommitted changes:"
-#   echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
-#   echo ""
-
-#   echo -e "Now running \e[95mrake test ${TESTFILESCHANGED[1]}\e[0m"
-#   rake test ${TESTFILESCHANGED[1]} 
-# }
-
-
-
 test_files_changed() {
   TESTFILESCHANGED=$(gst -s test/**/*_test.rb | awk '{ print $2 }')
-
-  echo "these test files have uncommitted changes:"
-  echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
-  echo ""
+  echo "${TESTFILESCHANGED}"
 }
 
-run_test() {
-  # http://stackoverflow.com/a/17336953/1358187
-  # Echo the return value out from the previous function, and read into this one
+test_one_file() {
+  # Argument is "test_file_name.rb"
+  echo -e "\e[95mnow running\e[0m"
+  echo "rake test TEST=$1"
+  echo ""
+  rake test TEST=$1
 }
 
-testit() {
-  TESTFILESCHANGED=($(gst -s test/**/*_test.rb | awk '{ print $2 }'))  # (..) = array
-
-  echo "these test files have uncommitted changes:"
-  echo -e "\e[95m${TESTFILESCHANGED}\e[0m"
+test_one_method() {
+  # Arguments are "test_file_name.rb" and "method_performs_as_desired"
+  echo -e "\e[95mnow running\e[0m"
+  echo "rake test $1 TESTOPTS='--name=/$2/ -v'"
   echo ""
+  rake test $1 TESTOPTS="--name=/$2/ -v"
+}
 
-  if [[ $@ ]]; then
-    echo "Running only tests with {$@} in the name"
-    echo "WARNING - this doesn't use spring, so is probably slower than running all the tests"
-    echo -e "Now running \e[95mruby -I lib:test ${TESTFILESCHANGED[1]} -n /$@/\e[0m"
-    ruby -I lib:test ${TESTFILESCHANGED[1]} -n /$@/
+test_em_all() {
+  echo -e "\e[95mnow running\e[0m"
+  if [[ $1 ]]; then
+    test_files_changed | xargs -I {} echo "rake test" {} "TESTOPTS='--name=/$1/ -v'"
+    echo ""
+    test_files_changed | xargs -I {} rake test {} TESTOPTS="--name=/$1/ -v"
   else
-    echo -e "Now running \e[95mrake test ${TESTFILESCHANGED[1]}\e[0m"
-    rake test ${TESTFILESCHANGED[1]} 
+    test_files_changed | xargs -I {} echo "rake test" {}
+    echo ""
+    test_files_changed | xargs -I {} rake test {}
   fi
 }
-
-echo_one() {
-  echo $1
-}
-
-echo_and_return_one() {
-  echo $1
-  return "sweet"
-}
-
-echo_all() {
-  echo $@
-  if [[ $@ ]]; then
-    echo "found an arg"
-  else
-    echo "no args found"
-  fi
-}
-
 
 dubquotes() {
-  set -e
-
   # dqm is Double Quoted Messages
   # Firts run Haml-lint, and store the errors
   dqm=$(haml-lint app/views/ | grep "Prefer double-quoted strings")
