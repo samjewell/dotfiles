@@ -1,12 +1,13 @@
 ## DONE:
 - Improve the `test_files_changed` scripts
 - remove `makesymlinks.sh`
+- Pull out dubquotes into another script
 
 ## TODO (Sam):
-- Pull out dubquotes into another script
-- Reset sublime-text - try to get git-gutter and linting working again
-- Add Sublime-text config to the dotfiles repo
+- Get linting working in Sublime
+- Add Sublime config to this repo
 
+- Run dubquotes, and make a PR from it
 - Sort out the gitignore to ignore the coheat folder
 - Save encryption passwords to Lastpass
 
