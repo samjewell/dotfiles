@@ -3,6 +3,7 @@ alias gcleanupgo='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias ghist="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias showhidden='defaults write com.apple.finder AppleShowAllFiles YES'
 alias hidehidden='defaults write com.apple.finder AppleShowAllFiles NO'
+alias zshconfig="subl ~/dotfiles"
 
 # Stay safe out there
 alias trash="rmtrash"
