@@ -84,9 +84,9 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="subl ~/.zshrc && subl ~/dotfiles"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-# Add psql to my path
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin
+# Add psql to PATH
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # discussion on using the .sh suffix here:
 #   http://unix.stackexchange.com/questions/31760/file-extensions-for-unix-shell-scripts
