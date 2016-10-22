@@ -1,19 +1,12 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/samjewell/.oh-my-zsh
 
-# discussion on using the .sh suffix here:
-#   http://unix.stackexchange.com/questions/31760/file-extensions-for-unix-shell-scripts
-# The structure of these files largely copied from Phil Harrison's dotfiles
-#   https://github.com/harrison/dotfiles/tree/master/home
-. ~/dotfiles/.zsh/config.sh
-. ~/dotfiles/.zsh/aliases.sh
-. ~/dotfiles/.zsh/scripts.sh
-. ~/dotfiles/.zsh/init.sh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -60,16 +53,11 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
-# export PATH="/Users/samjewell/.rvm/gems/ruby-2.3.0/bin:/Users/samjewell/.rvm/gems/ruby-2.3.0@global/bin:/Users/samjewell/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/samjewell/.rvm/bin"
-PATH=$PATH:/Users/samjewell/.rvm/gems/ruby-2.3.0@bridgeu/bin
-# Add psql to my path
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin
-
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -93,10 +81,22 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="subl ~/.zshrc && subl ~/dotfiles"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Add psql to my path
+PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin
+
+# discussion on using the .sh suffix here:
+#   http://unix.stackexchange.com/questions/31760/file-extensions-for-unix-shell-scripts
+# The structure of these files largely copied from Phil Harrison's dotfiles
+#   https://github.com/harrison/dotfiles/tree/master/home
+. ~/dotfiles/.zsh/aliases.sh
+. ~/dotfiles/.zsh/config.sh
+. ~/dotfiles/.zsh/init.sh
+. ~/dotfiles/.zsh/functions.sh
+. ~/dotfiles/.zsh/scripts.sh
 
 # first `brew install direnv`, then
 eval "$(direnv hook zsh)"
