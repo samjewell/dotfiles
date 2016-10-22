@@ -4,6 +4,12 @@ alias ghist="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias showhidden='defaults write com.apple.finder AppleShowAllFiles YES'
 alias hidehidden='defaults write com.apple.finder AppleShowAllFiles NO'
 
+# Stay safe out there
+alias trash="rmtrash"
+alias rm="echo Use 'trash', or the full path i.e. '/bin/rm'"
+alias cp="echo won’t clobber && cp -n"
+alias mv="echo won’t clobber && mv -n"
+
 # BU stuff here
 alias reset_test_db="RAILS_ENV=test rake db:drop db:create db:structure:load db:schema:load"
 alias branchdb="branchy --enable; rake db:create db:migrate"
