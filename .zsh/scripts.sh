@@ -11,9 +11,9 @@ test_files_changed() {
 test_one_file() {
   # Argument is "test_file_name.rb"
   echo -e "\e[95mnow running\e[0m"
-  echo "rake test TEST=$1"
+  echo "rake test $1"
   echo ""
-  rake test TEST=$1
+  rake test $1
 }
 
 test_one_method() {
