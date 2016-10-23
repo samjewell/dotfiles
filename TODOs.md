@@ -2,10 +2,14 @@
 - Improve the `test_files_changed` scripts
 - remove `makesymlinks.sh`
 - Pull out dubquotes into another script
+- Backup again, then
+- Get linting working in Sublime
 
 ## TODO (Sam):
-- Get linting working in Sublime
 - Add Sublime config to this repo
+    + user-settings
+    + linters
+- Fix broken visuals in SublimeLinter
 
 - Run dubquotes, and make a PR from it
 - Sort out the gitignore to ignore the coheat folder
@@ -19,6 +23,7 @@
 - Open a blank repo on BridgeU
   + Make some PRs into that repo - everything apart from the osx folder.
 
+- files open by default in SublimeText
 - Add a license
 - Backup again, then
   + Try osx defaults
