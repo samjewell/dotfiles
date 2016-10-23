@@ -1,5 +1,6 @@
 # Now install these manually:
-- node
+- nvm (why? see http://stackoverflow.com/a/24404451/1358187)
+- node (via nvm)
 - docker for mac
 - Firefox 46
 - postgresapp
