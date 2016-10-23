@@ -6,7 +6,7 @@ These dotfiles are made with love, with these aims:
 - Make setting up the dev environment from scratch more straightforward
 - Get them (dotfiles) under version-control
 
-As a result they are opinionated - remove anything you don't want installed before running any of these scripts, if you have opinions!
+As a result they are opinionated (macOS running Sierra is assumed) - remove anything you don't want installed before running any of these scripts, if you have opinions!
 
 To get a working dev environment for BridgeU, first run these files in sequence:
 `install/brew.sh`
