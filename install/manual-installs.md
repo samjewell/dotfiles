@@ -7,6 +7,9 @@
 - sublime-text3
 - oh-my-zsh
 
+# for Sam
+- keynote
+
 # For capybara, you'll need these:
 See the [notes here](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit)
 - xcode
