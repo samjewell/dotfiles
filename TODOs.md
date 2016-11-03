@@ -1,15 +1,8 @@
-## DONE:
-- Improve the `test_files_changed` scripts
-- remove `makesymlinks.sh`
-- Pull out dubquotes into another script
-- Backup again, then
-- Get linting working in Sublime
-
 ## TODO (Sam):
 - Add Sublime config to this repo
     + user-settings
     + linters
-- Fix broken visuals in SublimeLinter
+- Setup Sublime for Rails: https://mattbrictson.com/sublime-text-3-recommendations
 
 - Run dubquotes, and make a PR from it
 - Sort out the gitignore to ignore the coheat folder
@@ -24,8 +17,9 @@
   + Make some PRs into that repo - everything apart from the osx folder.
 
 - files open by default in SublimeText
-- Add a license
-- Backup again, then
-  + Try osx defaults
-  + Try osx dock
+    + defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add \ '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}' from https://gist.github.com/jamiewilson/f4be10f7b9fb69059b2d540adb2e2276
+    + http://superuser.com/questions/273756/how-to-change-default-app-for-all-files-of-particular-file-type-through-terminal
+
+- Add a license (MIT)?
+- Mark the items that I don't think work in the osx script
 - Add Sublime-text config to the dotfiles repo
