@@ -12,7 +12,7 @@ alias cp="echo won’t clobber && cp -n"
 alias mv="echo won’t clobber && mv -n"
 
 # BU stuff here
-alias reset_test_db="RAILS_ENV=test rake db:drop db:create db:structure:load db:schema:load"
+alias reset_test_db="RAILS_ENV=test rake db:drop db:create db:schema:load db:structure:load"
 alias branchdb="branchy --enable; rake db:create db:migrate"
 alias tail_action="tail -f log/development.log | grep 'Processing by'"
 
