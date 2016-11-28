@@ -16,6 +16,7 @@ apps=(
   slack
   sourcetree
   spectacle
+  spotify
   valentina-studio
   soundflower
   soundcast
