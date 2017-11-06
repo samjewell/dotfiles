@@ -27,5 +27,6 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.hushlogin .hushlogin`
 `ln -s dotfiles/.irbrc .irbrc`
 `ln -s dotfiles/.pryrc .pryrc`
+`ln -s dotfiles/.gitignore_global .gitignore_global`
 
 Now you're done! Welcome to BridgeU 😉

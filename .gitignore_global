@@ -1,0 +1,14 @@
+*~
+.DS_Store
+
+# Ignore .idea folder for people using RubyMine
+.idea
+
+# Ignore project and workspace files for people using Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Ignore environment variables - they're usually secrets
+.env
+
+.git-authors
