@@ -21,4 +21,4 @@ alias start_review="open https://docs.google.com/spreadsheets/d/1Os-8dbuUqR7-YRA
 
 # Other
 # alias browsync='browser-sync start --proxy localhost:3000 --files "app/assets/stylesheets/**/*.scss, app/views/**/*.html.haml"'
-alias flippers='grep -hoR "\$flipper\[:\(\w\+\)]" --exclude-dir=test --exclude-dir=node_modules --color=none * | sort -u | cut -d "[" -f2 | cut -d "]" -f1'
+alias list_flippers='grep -hoR "\$flipper\[:\(\w\+\)]" --exclude-dir=node_modules --color=none * | sort -u | cut -d "[" -f2 | cut -d "]" -f1'
