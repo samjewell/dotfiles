@@ -6,6 +6,7 @@ brew tap caskroom/cask
 # Install packages
 
 apps=(
+  anaconda
   dropbox
   flux
   google-chrome
