@@ -8,10 +8,10 @@ brew tap caskroom/cask
 apps=(
   anaconda
   dropbox
-  flux
   google-chrome
   iterm2
   # karabiner
+  pycharm
   # sketch
   # sketch-toolbox
   slack
