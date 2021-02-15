@@ -8,12 +8,14 @@ brew tap caskroom/cask
 apps=(
   # anaconda
   dropbox
+  flycut # clipboard manager
   google-chrome
   iterm2
   # karabiner
   # pycharm-ce
   # sketch
   # sketch-toolbox
+  rectangle
   slack
   sourcetree
   # spectacle
