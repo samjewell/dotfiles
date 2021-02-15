@@ -5,7 +5,7 @@
 # Install packages
 # mas tool installs apps from the App Store, via the command-line
 # OSX python doesn't include pip. brew python does include it
-brew install git mas python yarn rmtrash heroku
+brew install git python yarn rmtrash heroku # mas
 # Consider getting direnv or autoenv, to automatically load env-vars and python
 # environments when entering/exiting folders
 # Consider running Redis and Postgres via Docker only
@@ -15,7 +15,7 @@ brew install git mas python yarn rmtrash heroku
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install XCode
-mas install 497799835
+#mas install 497799835
 
 # Install heroku-accounts
 heroku plugins:install heroku-accounts
