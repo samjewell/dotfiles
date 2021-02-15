@@ -1,6 +1,6 @@
 # Inspired by https://github.com/webpro/dotfiles
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install packages
 # mas tool installs apps from the App Store, via the command-line
