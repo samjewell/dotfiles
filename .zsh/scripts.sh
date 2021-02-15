@@ -39,3 +39,7 @@ test_em_all() {
     test_files_changed | xargs -I {} rake test {}
   fi
 }
+
+notify_unaccent() {
+  osascript -e 'display notification "Lorem ipsum dolor sit amet" sound name "sosumi"'
+}
