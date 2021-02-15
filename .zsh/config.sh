@@ -10,6 +10,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # see https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
 export PATH=~/.npm-global/bin:$PATH
 export SUPPRESS_DEPRECATION_WARNINGS='true'
+export BULLET_ENABLED='true'
 export CAPYBARA_DRIVER='chrome_headless'
 export DEBUG='true'
 
