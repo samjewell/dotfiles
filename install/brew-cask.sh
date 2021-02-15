@@ -11,7 +11,7 @@ apps=(
   google-chrome
   iterm2
   # karabiner
-  pycharm
+  pycharm-ce
   # sketch
   # sketch-toolbox
   slack
