@@ -22,4 +22,4 @@ brew install git rmtrash heroku # mas
 #mas install 497799835
 
 # Install heroku-accounts
-heroku plugins:install heroku-accounts
+# heroku plugins:install heroku-accounts
