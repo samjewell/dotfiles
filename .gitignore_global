@@ -8,7 +8,7 @@
 *.sublime-project
 *.sublime-workspace
 
-# Ignore environment variables - they're usually secrets
+# Ignore environment variables - they're often secrets
 .env
 
 .git-authors
