@@ -9,6 +9,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Change npm's default directory for global modules
 # see https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
 export PATH=~/.npm-global/bin:$PATH
+# Add vault to PATH
+export PATH=$PATH:/Applications/vault
 export SUPPRESS_DEPRECATION_WARNINGS='true'
 export BULLET_ENABLED='true'
 export CAPYBARA_DRIVER='chrome_headless'
