@@ -1,6 +1,6 @@
 export EDITOR='subl -w'
 # Add psql to PATH
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 # Add anaconda to PATH
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
