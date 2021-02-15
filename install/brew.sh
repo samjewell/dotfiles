@@ -11,7 +11,8 @@ brew install git mas python yarn rmtrash heroku
 # Consider running Redis and Postgres via Docker only
 
 # Install Oh My Zsh, via curl
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Big Sur includes ZSH by default now
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install XCode
 mas install 497799835
