@@ -12,3 +12,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Install XCode
 mas install 497799835
+
+# Install heroku-accounts
+heroku plugins:install heroku-accounts
