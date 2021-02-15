@@ -4,10 +4,12 @@
 
 # Install packages
 # mas tool installs apps from the App Store, via the command-line
-brew install git yarn rmtrash heroku # mas
+brew install git rmtrash heroku # mas
 # OSX python doesn't include pip. brew python does include it. But I've actually
 # found I like using Conda instead, for now.
 #brew install python
+# Postpone installing yarn until I need it
+#brew install yarn
 # Consider getting direnv or autoenv, to automatically load env-vars and python
 # environments when entering/exiting folders
 # Consider running Redis and Postgres via Docker only
