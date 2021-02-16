@@ -1,3 +1,6 @@
+git config --global user.name "Sam Jewell"
+git config --global user.email "2903904+samjewell@users.noreply.github.com"
+git config --global init.defaultBranch main
 git config --global rerere.enabled true
 git config --global commit.verbose true
 git config --global diff.compactionHeuristic true

@@ -1,15 +1,16 @@
 # Inspired by https://github.com/webpro/dotfiles
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install packages
 packages=(
-  git
+  # git # Type `git`, then install XCode CLI tools via macOS. But consider brew for ZSH completions?
   git-duet # commit with your pair-programmer
   hub # github CLI tool
-  rmtrash
-  heroku
-  awscli
+  trash
+  awscli # has a LOT of dependencies, inc Python and SQLite
+  # lastpass-cli
   # jq
   # less
   # chromedriver
@@ -38,5 +39,8 @@ brew install "${packages[@]}"
 # Install XCode
 #mas install 497799835
 
+# Install Heroku as per https://devcenter.heroku.com/articles/heroku-cli
+# In Feb 2021, the command was as follows
+brew tap heroku/brew && brew install heroku
 # Install heroku-accounts
 # heroku plugins:install heroku-accounts
