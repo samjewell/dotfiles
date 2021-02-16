@@ -6,14 +6,14 @@
 # Install packages
 packages=(
   awscli # has a LOT of dependencies, inc Python and SQLite
+  git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
   hub # github CLI tool
   trash
   # ansible
   # chromedriver
   # circleci
   # direnv # also autoenv, to automatically load env-vars and python envs when entering/exiting folders
-  # git # Type `git`, then install XCode CLI tools via macOS. But consider brew for ZSH completions?
-  # git-duet # "The x86_64 architecture is required" but `arch -x86_64` also fails rn
+  # git-duet # needs `arch -x86_64 brew install git-duet`, which needs homebrew also to have been installed through rosetta!
   # graphviz
   # imagemagick
   # jq
@@ -32,9 +32,8 @@ packages=(
 )
 brew install "${packages[@]}"
 
-# Install Oh My Zsh, via curl
-# Big Sur includes ZSH by default now
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Install Oh My Zsh, via curl (Big Sur includes Zsh by default now)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install XCode
 #mas install 497799835

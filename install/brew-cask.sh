@@ -15,7 +15,7 @@ apps=(
   redisinsight
   slack
   sourcetree
-  visual-studio-code # then add the `code` alias to my shell, as per https://code.visualstudio.com/docs/setup/mac
+  visual-studio-code
   zoom
   # anaconda
   # docker # Get the Apple M1 tech preview build instead

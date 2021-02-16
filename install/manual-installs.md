@@ -1,4 +1,7 @@
 # Now install these manually:
+- VSCode:
+   - Add the `code` alias to my shell, as per https://code.visualstudio.com/docs/setup/mac
+   - Add `export EDITOR='code -w'` to the .zshrc file
 - docker for mac:
    - the Apple M1 tech preview build at https://docs.docker.com/docker-for-mac/apple-m1/ 
 - Lastpass
