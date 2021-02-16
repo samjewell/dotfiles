@@ -2,6 +2,9 @@
 - VSCode:
    - Add the `code` alias to my shell, as per https://code.visualstudio.com/docs/setup/mac
    - Add `export EDITOR='code -w'` to the .zshrc file
+- iterm2
+   - Configure navigating and deleting whole words:
+     https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a
 - docker for mac:
    - the Apple M1 tech preview build at https://docs.docker.com/docker-for-mac/apple-m1/ 
 - Lastpass
