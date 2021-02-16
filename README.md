@@ -30,4 +30,9 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
 
+Launch Sourcetree by right-clicking, and then choose "Open"
+That way you can open it, even when Apple doesn't trust it.
+
+Sync the settings for VSCode with my github account
+
 Now you're done! Welcome 😉

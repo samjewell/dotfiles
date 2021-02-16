@@ -6,7 +6,6 @@
 # Install packages
 packages=(
   awscli # has a LOT of dependencies, inc Python and SQLite
-  git-duet # commit with your pair-programmer
   hub # github CLI tool
   trash
   # ansible
@@ -14,6 +13,7 @@ packages=(
   # circleci
   # direnv # also autoenv, to automatically load env-vars and python envs when entering/exiting folders
   # git # Type `git`, then install XCode CLI tools via macOS. But consider brew for ZSH completions?
+  # git-duet # "The x86_64 architecture is required" but `arch -x86_64` also fails rn
   # graphviz
   # imagemagick
   # jq
