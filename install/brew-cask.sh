@@ -15,7 +15,7 @@ apps=(
   redisinsight
   slack
   sourcetree
-  visual-studio-code
+  # visual-studio-code # Get the Arm64 Insiders build instead
   zoom
   # anaconda
   # docker # Get the Apple M1 tech preview build instead
