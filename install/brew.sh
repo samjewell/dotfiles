@@ -5,30 +5,30 @@
 
 # Install packages
 packages=(
-  # git # Type `git`, then install XCode CLI tools via macOS. But consider brew for ZSH completions?
+  awscli # has a LOT of dependencies, inc Python and SQLite
   git-duet # commit with your pair-programmer
   hub # github CLI tool
   trash
-  awscli # has a LOT of dependencies, inc Python and SQLite
-  # lastpass-cli
-  # jq
-  # less
-  # chromedriver
   # ansible
+  # chromedriver
   # circleci
+  # direnv # also autoenv, to automatically load env-vars and python envs when entering/exiting folders
+  # git # Type `git`, then install XCode CLI tools via macOS. But consider brew for ZSH completions?
   # graphviz
   # imagemagick
+  # jq
+  # lastpass-cli
+  # less
   # mas # installs apps from the App Store, via the command-line
+  # node@14
+  # postgresql # Run through Docker instead?
   # pypy3
   # python # MacOS python doesn't include pip, but this does. But postpone, and use Conda instead?
-  # node@14
-  # yarn
-  # direnv # also autoenv, to automatically load env-vars and python envs when entering/exiting folders
-  # sqlite
   # redis # Run through Docker instead?
-  # postgresql # Run through Docker instead?
+  # sqlite
   # terraform
   # wget
+  # yarn
 )
 brew install "${packages[@]}"
 
