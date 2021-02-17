@@ -9,6 +9,7 @@ apps=(
   flycut # clipboard manager
   google-chrome
   iterm2
+  kindle
   lastpass
   postico
   rectangle

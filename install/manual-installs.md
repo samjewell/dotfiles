@@ -10,6 +10,7 @@
      https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a
 - docker for mac:
    - the Apple M1 tech preview build at https://docs.docker.com/docker-for-mac/apple-m1/ 
+- Set an unique name for each Mac, in Sys Prefs: Sharing
 - Lastpass
    - Install the Safari extension
 - psql?

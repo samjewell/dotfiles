@@ -1,4 +1,3 @@
-export EDITOR='subl -w'
 # Add psql to PATH
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 # Add anaconda to PATH
@@ -19,6 +18,7 @@ export DEBUG='true'
 # first `brew install direnv`, then
 eval "$(direnv hook zsh)"
 
+# Add Go to PATH
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
