@@ -18,3 +18,7 @@ export DEBUG='true'
 
 # first `brew install direnv`, then
 eval "$(direnv hook zsh)"
+
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
