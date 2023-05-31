@@ -9,7 +9,7 @@ echo "_\ \ (_| | | | | | |"
 echo "\__/\__,_|_| |_| |_|"
                     
 # echo "Keep smiling, and fake it til you make it 😉"
-echo "Take confidence and enjoy your work"
+echo "Be ambitous - and build new capabilities"
 echo "- We’re all figuring it out as we go! 🤓😉😌"
 
 # # Allow [ or ] whereever you want

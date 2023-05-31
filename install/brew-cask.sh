@@ -8,15 +8,19 @@ apps=(
   dropbox
   flycut # clipboard manager
   google-chrome
+  google-cloud-sdk
   iterm2
+  keybase
   kindle
   lastpass
-  postico
+  miro
+  # postico # Postgres only
   rectangle
   redisinsight
   slack
   sourcetree
   # visual-studio-code # Get the Arm64 Insiders build instead
+  valentina-studio # Both Postgres and MySQL I think
   zoom
   # anaconda
   # docker # Get the Apple M1 tech preview build instead
@@ -25,6 +29,5 @@ apps=(
   # sketch # use Figma instead!
   # sketch-toolbox
   # spotify
-  # valentina-studio
 )
 brew cask install "${apps[@]}"
