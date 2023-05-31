@@ -12,3 +12,6 @@
 .env
 
 .git-authors
+
+# 1Password CLI generated shell-scripts
+**/.op/

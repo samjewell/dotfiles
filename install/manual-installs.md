@@ -11,9 +11,22 @@
 - docker for mac:
    - the Apple M1 tech preview build at https://docs.docker.com/docker-for-mac/apple-m1/ 
 - Set an unique name for each Mac, in Sys Prefs: Sharing
+- Google Cloud SDK: cask or https://cloud.google.com/sdk/docs/install, then:
+  - `gcloud auth login`
+  - `gcloud auth application-default login`
+  - `gcloud auth configure-docker`
+- poetry - env manager for Python
+  - Via Curl: `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`
+- Extensions for Chrome?
+  - Tree style tab
+  - Octotree
+  - Refined Github
+- yarn: `npm install -g yarn` (once node 14 added to path)
+- Set my work email for all commits inside my work folder, as per
+   https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig
 - Lastpass
-   - Install the Safari extension
-- psql?
+   - Install the Safari/Chrome extension(s)
+
 
 ## Later
 - nvm (why? see http://stackoverflow.com/a/24404451/1358187)
