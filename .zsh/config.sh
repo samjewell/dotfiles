@@ -46,3 +46,5 @@ export PATH="$PATH:/opt/homebrew/Cellar/bash/5.2.15/bin"
 
 # Run kubectl with the new plugin prior to the release of v1.26
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT

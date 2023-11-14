@@ -7,6 +7,7 @@
 arm_packages=(
   # awscli # has a LOT of dependencies, inc Python and SQLite
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
+  go
   gpg # keys
   grafana-cloud-agent
   hub # github CLI tool
