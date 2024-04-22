@@ -7,10 +7,11 @@
 arm_packages=(
   # awscli # has a LOT of dependencies, inc Python and SQLite
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
+  gh # github CLI tool
   go
   gpg # keys
   grafana-cloud-agent
-  hub # github CLI tool
+  gron # grep for JSON
   jq
   jsonnet
   jsonnet-bundler
@@ -18,6 +19,7 @@ arm_packages=(
   kubectl # K8s client
   istioctl
   fortio
+  fzf # fuzzy finder
   mysql-client@5.7
   node@14 # could install yarn instead, if v14 not needed
   pgrep # will also install pkill
