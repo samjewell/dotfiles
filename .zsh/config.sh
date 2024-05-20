@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # # Add psql to PATH
 # export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 # # Add anaconda to PATH

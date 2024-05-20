@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo_one() {
   echo $1
 }
