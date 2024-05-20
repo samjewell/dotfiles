@@ -2,8 +2,6 @@
 # export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 # # Add anaconda to PATH
 # export PATH=/usr/local/anaconda3/bin:"$PATH"
-# # Add node 12 to PATH
-export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # # Change npm's default directory for global modules
 # # see https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
