@@ -24,15 +24,18 @@ alias retro="code /Users/samjewell/Library/Mobile\ Documents/com~apple~CloudDocs
 alias start_review="open https://docs.google.com/spreadsheets/d/1Os-8dbuUqR7-YRAz1BBPnC34pqhZUWZEYeJhmro4hsU/edit"
 
 # Other
-alias list_flippers='grep -hoR "\$flipper\[:\(\w\+\)]" --exclude-dir=tmp --exclude-dir=log --exclude-dir=node_modules --exclude-dir=coverage --color=none * | sort -u | cut -d "[" -f2 | cut -d "]" -f1'
+# alias list_flippers='grep -hoR "\$flipper\[:\(\w\+\)]" --exclude-dir=tmp --exclude-dir=log --exclude-dir=node_modules --exclude-dir=coverage --color=none * | sort -u | cut -d "[" -f2 | cut -d "]" -f1'
 
 # Run two versions of homebrew (Intel and Arm)
 # https://osxdaily.com/2020/11/18/how-run-homebrew-x86-terminal-apple-silicon-mac/#more-111694:~:text=Here%E2%80%99s%20the%20workaround%20until%20native%20support%20arrives
 # https://stackoverflow.com/a/65424574/1358187
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
-alias mbrew='arch -arm64e /opt/homebrew/bin/brew'
+# alias ibrew='arch -x86_64 /usr/local/bin/brew'
+# alias mbrew='arch -arm64e /opt/homebrew/bin/brew'
 
 alias graf-server="/opt/homebrew/opt/grafana/bin/grafana-server --config /opt/homebrew/etc/grafana/grafana.ini --homepath /opt/homebrew/opt/grafana/share/grafana --packaging=brew cfg:default.paths.logs=/opt/homebrew/var/log/grafana cfg:default.paths.data=/opt/homebrew/var/lib/grafana cfg:default.paths.plugins=/opt/homebrew/var/lib/grafana/plugins"
+
+# Add kubectl completions
+source <(kubectl completion zsh)
 
 # Git aliases, taken from OhMyZsh plugin
 alias g='git'
