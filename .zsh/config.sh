@@ -1,19 +1,9 @@
 #!/bin/bash
 
-# # Add psql to PATH
-# export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-# # Add anaconda to PATH
-# export PATH=/usr/local/anaconda3/bin:"$PATH"
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # # Change npm's default directory for global modules
 # # see https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory
 # export PATH=~/.npm-global/bin:$PATH
-# # Add vault to PATH
-# export PATH=$PATH:/Applications/vault
 # export SUPPRESS_DEPRECATION_WARNINGS='true'
-# export BULLET_ENABLED='true'
-# export CAPYBARA_DRIVER='chrome_headless'
-# export DEBUG='true'
 
 # # first `brew install direnv`, then
 # eval "$(direnv hook zsh)"
@@ -29,14 +19,11 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Put native Arm arch. homebrew at the front of the path:
-export PATH="/opt/homebrew/bin:/opt/homebrew/opt:$PATH"
+# export PATH="/opt/homebrew/bin:/opt/homebrew/opt:$PATH"
 
 # Increase number of open allowed files, for: 
 # https://github.com/grafana/grafana/blob/master/contribute/developer-guide.md#too-many-open-files-when-running-make-run
-ulimit -S -n 2048
-
-# Add git-crypt to PATH
-export PATH="$PATH:/Users/samjewell/fana/git-crypt"
+ulimit -S -n 8192
 
 # Add MySQL client to PATH
 export PATH="$PATH:/opt/homebrew/opt/mysql-client@5.7/bin"
@@ -47,4 +34,26 @@ export PATH="$PATH:/opt/homebrew/Cellar/bash/5.2.15/bin"
 # Run kubectl with the new plugin prior to the release of v1.26
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+# Enable sqlExpressions feature toggle for Grafana local development
+# Keys of features to enable, separated by space
+# export GF_FEATURE_TOGGLES_ENABLE="sqlExpressions,expressionParser"
+export GF_FEATURE_TOGGLES_ENABLE="queryLibrary,sqlExpressions"
+# unset GF_FEATURE_TOGGLES_ENABLE
+
 PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
+
+# # Switch off spotlight indexing
+# sudo mdutil -a -i off
+
+# # Switch it back on
+# sudo mdutil -a -i on
+
+# # Rebuild the index
+# sudo mdutil -E
+
+# # Disable Spotlight indexing for external drives
+# sudo mdutil -i off /Volumes/EXTERNAL_DRIVE_NAME
+
+# # Switch it back on
+# sudo mdutil -i on /Volumes/EXTERNAL_DRIVE_NAME
+

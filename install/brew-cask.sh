@@ -10,6 +10,8 @@ apps=(
   google-chrome
   google-cloud-sdk
   iterm2
+  # I don't think I trust this - it can read every keypress
+  # karabiner-elements # keyboard remapping - F5 to dictation on magic keyboard 1st gen
   keybase
   kindle
   lastpass

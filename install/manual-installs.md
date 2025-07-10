@@ -1,7 +1,7 @@
 # Now install these manually:
-- VSCode:
-   - Add the `code-insiders` symlink to my path, as per https://code.visualstudio.com/docs/setup/mac
-   - Add the `code` symlink, duplicating the destination from `code-insiders` above
+- Arc browser
+- ~~VSCode~~ Cursor:
+   - Add the `code` and `cursor` symlinks to my path, as per https://code.visualstudio.com/docs/setup/mac
    - Add `export EDITOR='code -w'` to the .zshrc file
    - Add sublime-text keybindings (extension)
    - Log into my Github Account

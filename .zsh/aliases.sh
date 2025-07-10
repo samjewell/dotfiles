@@ -37,6 +37,8 @@ alias graf-server="/opt/homebrew/opt/grafana/bin/grafana-server --config /opt/ho
 # Add kubectl completions
 source <(kubectl completion zsh)
 
+alias k="kubectl"
+
 # Git aliases, taken from OhMyZsh plugin
 alias g='git'
 alias ga='git add'
