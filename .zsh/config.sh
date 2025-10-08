@@ -36,8 +36,8 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Enable sqlExpressions feature toggle for Grafana local development
 # Keys of features to enable, separated by space
-# export GF_FEATURE_TOGGLES_ENABLE="sqlExpressions,expressionParser"
-export GF_FEATURE_TOGGLES_ENABLE="queryLibrary,sqlExpressions"
+# export GF_FEATURE_TOGGLES_ENABLE="tableNextGen"
+export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,dashboardDsAdHocFiltering,adhocFiltersInTooltips"
 # unset GF_FEATURE_TOGGLES_ENABLE
 
 PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
