@@ -60,3 +60,7 @@ PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
 # Have `fzf` search local files only by default, when using loki-shell
 # See https://github.com/slim-bean/loki-shell?tab=readme-ov-file#loki-shell
 export LS_LOCAL=true
+
+# Hide command line numbers in fzf history search (Ctrl+R)
+# --with-nth 2.. tells fzf to only display fields 2 and onwards, hiding the line numbers
+export FZF_CTRL_R_OPTS="--with-nth 2.."
