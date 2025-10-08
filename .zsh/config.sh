@@ -57,3 +57,6 @@ PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
 # # Switch it back on
 # sudo mdutil -i on /Volumes/EXTERNAL_DRIVE_NAME
 
+# Have `fzf` search local files only by default, when using loki-shell
+# See https://github.com/slim-bean/loki-shell?tab=readme-ov-file#loki-shell
+export LS_LOCAL=true
