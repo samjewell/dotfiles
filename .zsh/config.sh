@@ -34,11 +34,10 @@ export PATH="$PATH:/opt/homebrew/Cellar/bash/5.2.15/bin"
 # Run kubectl with the new plugin prior to the release of v1.26
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
-# Enable sqlExpressions feature toggle for Grafana local development
-# Keys of features to enable, separated by space
-# export GF_FEATURE_TOGGLES_ENABLE="tableNextGen"
+# Enable feature toggles for Grafana local development
 export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,dashboardDsAdHocFiltering,adhocFiltersInTooltips"
-# unset GF_FEATURE_TOGGLES_ENABLE
+# Enable console logging for analytics events
+export GF_ANALYTICS_BROWSER_CONSOLE_REPORTER=true
 
 PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
 
