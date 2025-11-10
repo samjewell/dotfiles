@@ -10,8 +10,10 @@
 
 # Add Go to PATH
 export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+# Note: GOROOT should not be set manually - Go handles this automatically
+# I was previously setting it, but no need since Go 1.21
+# Check the git commit history for the previous version of this file
+export PATH="$PATH:${GOPATH}/bin"
 
 # Add Ruby to PATH
 # export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
