@@ -37,6 +37,9 @@ alias start_review="open https://docs.google.com/spreadsheets/d/1Os-8dbuUqR7-YRA
 
 alias graf-server="/opt/homebrew/opt/grafana/bin/grafana-server --config /opt/homebrew/etc/grafana/grafana.ini --homepath /opt/homebrew/opt/grafana/share/grafana --packaging=brew cfg:default.paths.logs=/opt/homebrew/var/log/grafana cfg:default.paths.data=/opt/homebrew/var/lib/grafana cfg:default.paths.plugins=/opt/homebrew/var/lib/grafana/plugins"
 
+# Hackathon 14 Cufana Dev CLI
+alias dev='/Users/samjewell/fana/hackathon-14-cufana/dev.sh'
+
 # Add kubectl completions
 source <(kubectl completion zsh)
 

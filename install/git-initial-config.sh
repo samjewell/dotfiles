@@ -17,6 +17,10 @@ git config --global user.email "2903904+samjewell@users.noreply.github.com"
 git config --global user.name "Sam Jewell"
 git config --global advice.skippedCherryPicks false
 git config --global core.commentChar ";"
+# Configure Git pager, to play nicely with Cursor AI Agent
+git config --global core.pager "less -FRX" # -F: quit if output fits on one screen, -R: allow colors, -X: don't clear screen
+git config --global pager.branch false # Don't page branch output
+git config --global pager.tag false # Don't page tag output
 
 # Configure Git signing with 1Password SSH
 # TODO: Replace with your own signing key from 1Password
