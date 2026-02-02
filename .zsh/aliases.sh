@@ -45,6 +45,9 @@ source <(kubectl completion zsh)
 
 alias k="kubectl"
 
+# Github aliases, inspired by git aliases from OhMyZsh plugin
+alias ghco='gh pr checkout'
+
 # Git aliases, taken from OhMyZsh plugin
 alias g='git'
 alias ga='git add'
