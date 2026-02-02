@@ -37,7 +37,7 @@ export PATH="$PATH:/opt/homebrew/Cellar/bash/5.2.15/bin"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Enable feature toggles for Grafana local development
-export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,dashboardDsAdHocFiltering,adhocFiltersInTooltips"
+export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,queryService,transformationsEmptyPlaceholder"
 # Enable console logging for analytics events
 export GF_ANALYTICS_BROWSER_CONSOLE_REPORTER=true
 

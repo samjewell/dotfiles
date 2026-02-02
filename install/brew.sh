@@ -27,6 +27,7 @@ arm_packages=(
   mysql-client@5.7
   node@20 # could install yarn instead, if v14 not needed
   pgrep # will also install pkill
+  pinentry-mac # for gpg signing of commits
   pipx # for installing Python CLI tools
   python@3.9 # installed by awscli anyway
   ripgrep # fast grep
