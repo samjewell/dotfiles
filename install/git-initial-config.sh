@@ -50,14 +50,6 @@ git config --global core.pager "less -FRX" # -F: quit if output fits on one scre
 git config --global pager.branch false # Don't page branch output
 git config --global pager.tag false # Don't page tag output
 
-# # Configure Git signing with 1Password SSH
-# # TODO: Replace with your own signing key from 1Password
-# # Or follow the instructions here: https://developer.1password.com/docs/ssh/git-commit-signing/#step-1-configure-git-commit-signing-with-ssh
-# git config --global user.signingkey "YOUR_SIGNING_KEY_HERE"
-# git config --global gpg.format ssh
-# git config --global gpg.ssh.program "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-# git config --global commit.gpgsign true
-
 # Configure Git signing with OpenPGP
 git config --global --unset gpg.ssh.program 2>/dev/null || true  # Remove any leftover 1Password SSH signing config
 git config --global gpg.format openpgp
