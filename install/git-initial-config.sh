@@ -2,6 +2,7 @@
 gh auth login
 gh config set git_protocol https
 gh auth setup-git
+gh auth status
 
 # Configure gpg-agent with extended cache timeout
 # so that I don't have to enter my passphrase every time I commit
