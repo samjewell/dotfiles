@@ -26,6 +26,9 @@
    https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig
 - Lastpass
    - Install the Safari/Chrome extension(s)
+- GitHub CLI additional scope (interactive browser/device auth)
+  - `gh auth refresh -h github.com -s workflow`
+  - `gh auth status`
 
 
 ## Later
