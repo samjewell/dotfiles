@@ -36,8 +36,11 @@ export PATH="$PATH:/opt/homebrew/Cellar/bash/5.2.15/bin"
 # Run kubectl with the new plugin prior to the release of v1.26
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+# Use Rustanka (rtk) instead of Tanka
+export USE_RTK=true
+
 # Enable feature toggles for Grafana local development
-export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,queryService,transformationsEmptyPlaceholder"
+export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,sqlExpressionsColumnAutoComplete,queryService,transformationsEmptyPlaceholder"
 # Enable console logging for analytics events
 export GF_ANALYTICS_BROWSER_CONSOLE_REPORTER=true
 
