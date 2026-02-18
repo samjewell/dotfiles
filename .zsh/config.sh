@@ -8,6 +8,9 @@
 # # first `brew install direnv`, then
 # eval "$(direnv hook zsh)"
 
+# Activate mise (tool version manager)
+eval "$(/Users/samjewell/.local/bin/mise activate zsh)"
+
 # Add Go to PATH
 export GOPATH=$HOME/go
 # Note: GOROOT should not be set manually - Go handles this automatically
