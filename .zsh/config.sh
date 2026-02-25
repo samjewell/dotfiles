@@ -47,6 +47,10 @@ export GF_FEATURE_TOGGLES_ENABLE="tableNextGen,queryLibrary,sqlExpressions,sqlEx
 # Enable console logging for analytics events
 export GF_ANALYTICS_BROWSER_CONSOLE_REPORTER=true
 
+# Keep GPG signing stable across terminal/context changes.
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+
 PROMPT='%{$fg[yellow]%}%D{%L:%M:%S} '$PROMPT
 
 # # Switch off spotlight indexing
