@@ -5,6 +5,7 @@ brew tap caskroom/cask
 
 # Install packages
 apps=(
+  claude-code
   dropbox
   flycut # clipboard manager
   google-chrome

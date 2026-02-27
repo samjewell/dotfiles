@@ -17,6 +17,7 @@ arm_packages=(
   go
   gpg # keys
   grafana-cloud-agent
+  grafana/grafana/grafana-assistant
   gron # grep for JSON
   jq
   jsonnet
