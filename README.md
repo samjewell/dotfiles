@@ -30,6 +30,10 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
 
+Symlink and load the LaunchAgents (re-applies keyboard repeat settings at every login, needed on macOS Sequoia):
+`ln -sf ~/dotfiles/osx/launch-agents/com.samjewell.keyboard-repeat.plist ~/Library/LaunchAgents/com.samjewell.keyboard-repeat.plist`
+`launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.samjewell.keyboard-repeat.plist`
+
 Launch Sourcetree by right-clicking, and then choose "Open"
 That way you can open it, even when Apple doesn't trust it.
 
