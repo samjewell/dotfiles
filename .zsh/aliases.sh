@@ -40,6 +40,9 @@ alias graf-server="/opt/homebrew/opt/grafana/bin/grafana-server --config /opt/ho
 # Hackathon 14 Cufana Dev CLI
 alias dev='/Users/samjewell/fana/hackathon-14-cufana/dev.sh'
 
+# Tailscale CLI on MacOS
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
 # Add kubectl completions
 source <(kubectl completion zsh)
 
