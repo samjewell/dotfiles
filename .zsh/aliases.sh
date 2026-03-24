@@ -46,6 +46,11 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # Add kubectl completions
 source <(kubectl completion zsh)
 
+# GCom completions
+source <(gcom --autocompletion=zsh)
+source <(gcom-dev --autocompletion=zsh)
+source <(gcom-ops --autocompletion=zsh)
+
 alias k="kubectl"
 
 # Github aliases, inspired by git aliases from OhMyZsh plugin
