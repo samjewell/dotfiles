@@ -1,0 +1,33 @@
+# sj-iterm-2026 — exported from iTerm2 on 11 May 2026.
+#
+# All colours are Display P3 values taken straight from the iTerm export,
+# so window-colorspace must be set to display-p3 for the rendered output
+# to match iTerm. (display-p3 is macOS-only; on Linux these will still
+# render, just interpreted as sRGB.)
+window-colorspace = display-p3
+
+background = #000000
+foreground = #c7c7c7
+
+cursor-color = #c7c7c7
+cursor-text = #ffffff
+
+selection-background = #c7ddfc
+selection-foreground = #000000
+
+palette = 0=#000000
+palette = 1=#b93119
+palette = 2=#52bf37
+palette = 3=#c7c43e
+palette = 4=#0d24bf
+palette = 5=#ba3ec1
+palette = 6=#54c2c6
+palette = 7=#c7c7c7
+palette = 8=#686868
+palette = 9=#f0776d
+palette = 10=#8df77a
+palette = 11=#fefc7f
+palette = 12=#6a71f7
+palette = 13=#f07ff8
+palette = 14=#8efafd
+palette = 15=#ffffff

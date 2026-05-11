@@ -1,0 +1,16 @@
+theme = sj-iterm-2026
+
+# Match my iTerm Default profile (Settings -> Profiles -> Text):
+#   - Monaco 12pt (iTerm "Font: Monaco / Regular / 12")
+#   - bold text uses the bright palette variant (iTerm: "Use bright colors for bold")
+#   - thicker font strokes (Ghostty's default rendering on macOS came out thinner than
+#     iTerm's "Thin strokes: On Retina Displays" did, so opt back into thickening here)
+font-family = Monaco
+font-size = 12
+bold-color = bright
+font-thicken = true
+
+# iTerm-style "selection automatically copies to clipboard". Must be `clipboard`
+# (not `true`) on macOS — `true` only writes to the selection clipboard, which
+# on macOS is middle-click-only and doesn't make cmd-V work.
+copy-on-select = clipboard
