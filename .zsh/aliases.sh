@@ -9,11 +9,11 @@ alias zshconfig="code ~/dotfiles"
 
 # Stay safe out there - but only when using terminal interactively
 # Skip these aliases when running under Cursor AI agent or other non-interactive contexts
-if [[ -z "$CURSOR_AGENT" && $- == *i* ]]; then
-    alias rm="echo Use 'trash', or the full path i.e. '/bin/rm'"
-    alias cp="echo won't clobber && cp -n"
-    alias mv="echo won't clobber && mv -n"
-fi
+# if [[ -z "$CURSOR_AGENT" && $- == *i* ]]; then
+#     alias rm="echo Use 'trash', or the full path i.e. '/bin/rm'"
+#     alias cp="echo won't clobber && cp -n"
+#     alias mv="echo won't clobber && mv -n"
+# fi
 
 # # Use `gh` with Personal Access Token stored within my 1Password vault
 # source /Users/samjewell/.config/op/plugins.sh
