@@ -30,6 +30,10 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
 
+If you want Ghostty to pick up the colour scheme exported from iTerm, symlink the whole `ghostty` directory into `~/.config`:
+`mkdir -p ~/.config && ln -s ~/dotfiles/ghostty ~/.config/ghostty`
+The theme file lives at `ghostty/themes/sj-iterm-2026` and is activated by the single `theme = sj-iterm-2026` line in `ghostty/config`. Note that the colours are Display P3 values, so they require `window-colorspace = display-p3` (set in the theme) to render identically to iTerm — this is macOS-only.
+
 Launch Sourcetree by right-clicking, and then choose "Open"
 That way you can open it, even when Apple doesn't trust it.
 
