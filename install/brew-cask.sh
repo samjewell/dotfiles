@@ -8,6 +8,7 @@ apps=(
   claude-code
   dropbox
   flycut # clipboard manager
+  gcx # Grafana Cloud CLI
   google-chrome
   google-cloud-sdk
   iterm2
