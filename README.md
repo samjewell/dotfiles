@@ -29,6 +29,8 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.irbrc .irbrc`
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
+`ln -s dotfiles/.npmrc .npmrc`
+`mkdir -p ~/Library/Preferences/pnpm && ln -s ~/dotfiles/pnpm/rc ~/Library/Preferences/pnpm/rc`
 
 If you want Ghostty to pick up the colour scheme exported from iTerm, symlink the whole `ghostty` directory into `~/.config`:
 `mkdir -p ~/.config && ln -s ~/dotfiles/ghostty ~/.config/ghostty`
