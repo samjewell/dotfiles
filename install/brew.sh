@@ -6,6 +6,7 @@
 # Install packages
 arm_packages=(
   # awscli # has a LOT of dependencies, inc Python and SQLite
+  betterleaks
   cowsay # with Ezra
   derailed/k9s/k9s # K8s interactive terminal application
   duckdb
@@ -13,6 +14,7 @@ arm_packages=(
   fortio
   fzf # fuzzy finder
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
+  gitleaks
   gh # github CLI tool
   go
   gpg # keys
