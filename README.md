@@ -22,6 +22,7 @@ Add these to the end of your `.zshrc` file:
 `. ~/dotfiles/.zsh/config.sh`
 `. ~/dotfiles/.zsh/aliases.sh`
 `. ~/dotfiles/.zsh/scripts.sh`
+`. ~/dotfiles/.zsh/functions.sh`
 `. ~/dotfiles/.zsh/init.sh`
 
 Check to make sure you aren't going to overwrite (clobber) anything, then add symlinks as follows:

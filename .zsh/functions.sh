@@ -1,21 +1,12 @@
 #!/bin/bash
 
-echo_one() {
-  echo $1
-}
+gdoc2md() {
+  local tool="${GDOC2MD_TOOL:-$HOME/dotfiles/tools/gdoc2md}"
 
-echo_and_return_one() {
-  echo $1
-  return 1
-}
-
-echo_all() {
-  echo $@
-  if [[ $@ ]]; then
-    echo "found an arg"
+  if [[ ! -d "$tool" ]]; then
+    echo "gdoc2md: Go tool directory not found: $tool" >&2
     return 1
-  else
-    echo "no args found"
-    return 0
   fi
+
+  (cd "$tool" && command go run . "$@")
 }
