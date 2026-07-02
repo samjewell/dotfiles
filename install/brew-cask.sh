@@ -8,10 +8,9 @@ apps=(
   claude-code
   dropbox
   flycut # clipboard manager
-  gcx # Grafana Cloud CLI
+  gcloud-cli
   ghostty # terminal (replaces iterm2)
   google-chrome
-  google-cloud-sdk
   # iterm2 # replaced by ghostty
   # I don't think I trust this - it can read every keypress
   # karabiner-elements # keyboard remapping - F5 to dictation on magic keyboard 1st gen
