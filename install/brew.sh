@@ -19,7 +19,7 @@ arm_packages=(
   go
   gpg # keys
   grafana-cloud-agent
-  grafana/grafana/grafana-assistant
+  # grafana/grafana/grafana-assistant
   gron # grep for JSON
   jq
   jsonnet
@@ -27,12 +27,11 @@ arm_packages=(
   # k3d # lightweight k8s distro, but don't need both this and minikube
   kubectl # K8s client
   # istioctl
-  mysql-client@5.7
+  # mysql-client@5.7
   node@20 # could install yarn instead, if v14 not needed
   pgrep # will also install pkill
   pinentry-mac # for gpg signing of commits
   pipx # for installing Python CLI tools
-  python@3.9 # installed by awscli anyway
   ripgrep # fast grep
   # ruby@2.7 # system ruby is 2.6
   sl # train animation for Ezra

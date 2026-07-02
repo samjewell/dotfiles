@@ -5,11 +5,8 @@
    - Add `export EDITOR='code -w'` to the .zshrc file
    - Add sublime-text keybindings (extension)
    - Log into my Github Account
-- iterm2
-   - Configure navigating and deleting whole words:
-     https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a
-- docker for mac:
-   - the Apple M1 tech preview build at https://docs.docker.com/docker-for-mac/apple-m1/ 
+- ghostty (terminal) - installed via `brew-cask.sh`
+- OrbStack (Docker/Linux VMs, replaces Docker for Mac) - installed via `brew-cask.sh`
 - Set an unique name for each Mac, in Sys Prefs: Sharing
 - Google Cloud SDK: cask or https://cloud.google.com/sdk/docs/install, then:
   - `gcloud auth login`
