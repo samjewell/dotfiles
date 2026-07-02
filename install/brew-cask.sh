@@ -9,22 +9,24 @@ apps=(
   dropbox
   flycut # clipboard manager
   gcx # Grafana Cloud CLI
+  ghostty # terminal (replaces iterm2)
   google-chrome
   google-cloud-sdk
-  iterm2
+  # iterm2 # replaced by ghostty
   # I don't think I trust this - it can read every keypress
   # karabiner-elements # keyboard remapping - F5 to dictation on magic keyboard 1st gen
   keybase
   kindle
-  lastpass
+  # lastpass
   miro
+  orbstack # Docker/Linux VMs (replaces Docker for Mac)
   # postico # Postgres only
   rectangle
-  redisinsight
+  # redisinsight
   slack
   sourcetree
   # visual-studio-code # Get the Arm64 Insiders build instead
-  valentina-studio # Both Postgres and MySQL I think
+  # valentina-studio # Both Postgres and MySQL I think
   zoom
   # anaconda
   # docker # Get the Apple M1 tech preview build instead
