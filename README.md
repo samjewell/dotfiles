@@ -24,6 +24,7 @@ Add these to the end of your `.zshrc` file:
 `. ~/dotfiles/.zsh/scripts.sh`
 `. ~/dotfiles/.zsh/functions.sh`
 `. ~/dotfiles/.zsh/init.sh`
+`. ~/dotfiles/.zsh/path.sh` (must be last — mise should win over Volta/yarn/bun)
 
 Check to make sure you aren't going to overwrite (clobber) anything, then add symlinks as follows:
 `ln -s dotfiles/.hushlogin .hushlogin`
