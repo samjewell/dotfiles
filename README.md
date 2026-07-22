@@ -32,6 +32,7 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
 `ln -s dotfiles/.npmrc .npmrc`
+`ln -s dotfiles/.zshenv .zshenv`
 `mkdir -p ~/Library/Preferences/pnpm && ln -s ~/dotfiles/pnpm/rc ~/Library/Preferences/pnpm/rc`
 
 If you want Ghostty to pick up the colour scheme exported from iTerm, symlink the whole `ghostty` directory into `~/.config`:
