@@ -51,6 +51,9 @@ git config --global core.pager "less -FRX" # -F: quit if output fits on one scre
 git config --global pager.branch false # Don't page branch output
 git config --global pager.tag false # Don't page tag output
 
+# Set up Git LFS filters and hooks (git-lfs binary comes from brew.sh)
+git lfs install
+
 # Configure Git signing with OpenPGP
 git config --global --unset gpg.ssh.program 2>/dev/null || true  # Remove any leftover 1Password SSH signing config
 git config --global gpg.format openpgp

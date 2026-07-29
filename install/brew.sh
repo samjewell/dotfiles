@@ -14,6 +14,7 @@ arm_packages=(
   fortio
   fzf # fuzzy finder
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
+  git-lfs # large file storage; `git lfs install` runs in git-initial-config.sh
   gitleaks
   gh # github CLI tool
   go
