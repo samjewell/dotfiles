@@ -12,7 +12,7 @@ To get a working dev environment, first run these files in sequence:
 `install/brew.sh`
 `install/brew-cask.sh`
 Navigate into a git repo (or initialise one), and then run
-`install/git-install-config.sh`
+`install/git-initial-config.sh`
 
 Then manually download and install the items in `install/manual-installs.md`
 
