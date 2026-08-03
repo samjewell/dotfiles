@@ -7,11 +7,13 @@
 arm_packages=(
   awscli
   betterleaks
+  cmatrix # for Ezra
   cowsay # with Ezra
   derailed/k9s/k9s # K8s interactive terminal application
   duckdb
   figlet # for ASCII art with Ezra
   fortio
+  fortune # for Ezra
   fzf # fuzzy finder
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
   git-lfs # large file storage; `git lfs install` runs in git-initial-config.sh
