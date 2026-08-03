@@ -7,13 +7,13 @@
 arm_packages=(
   awscli
   betterleaks
-  cmatrix # for fun with kids
-  cowsay # with fun with kids
+  cmatrix # for fun
+  cowsay # for fun
   derailed/k9s/k9s # K8s interactive terminal application
   duckdb
-  figlet # for ASCII art with fun with kids
+  figlet # for ASCII art fun
   fortio
-  fortune # for fun with kids
+  fortune # for fun
   fzf # fuzzy finder
   git # brew version is more recent than Xcode CLI tools! Also get ZSH completions 🙂
   git-lfs # large file storage; `git lfs install` runs in git-initial-config.sh
@@ -38,7 +38,7 @@ arm_packages=(
   prometheus
   ripgrep # fast grep
   # ruby@2.7 # system ruby is 2.6
-  sl # train animation for fun with kids
+  sl # train animation for fun
   trash
   trufflehog
   uv # Python package/version manager
