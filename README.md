@@ -24,7 +24,18 @@ Add these to the end of your `.zshrc` file:
 `. ~/dotfiles/.zsh/scripts.sh`
 `. ~/dotfiles/.zsh/functions.sh`
 `. ~/dotfiles/.zsh/init.sh`
-`. ~/dotfiles/.zsh/path.sh` (must be last — mise should win over Volta/yarn/bun)
+`. ~/dotfiles/.zsh/path.sh` (must be last - mise should win over Volta/yarn/bun)
+
+### PATH ordering rule
+
+mise-managed tools must beat Homebrew duplicates, in every kind of shell. The
+last writer to the front of PATH wins, so `.zsh/mise-shims.sh` puts the mise
+shims dir ahead of `/opt/homebrew/bin` and is sourced from both `.zshenv`
+(every shell, incl. non-interactive) and `.zprofile` (after `brew shellenv`,
+which prepends Homebrew). Interactive shells additionally get
+`mise activate zsh`, run last from `.zshrc` via `path.sh`. Don't reorder
+these: with Homebrew ahead of the shims, `mise run` / `mise x` silently pick
+up Homebrew's go/node/etc instead of the project-pinned versions.
 
 Check to make sure you aren't going to overwrite (clobber) anything, then add symlinks as follows:
 `ln -s dotfiles/.hushlogin .hushlogin`
@@ -33,6 +44,7 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.gitignore_global .gitignore_global`
 `ln -s dotfiles/.npmrc .npmrc`
 `ln -s dotfiles/.zshenv .zshenv`
+`ln -s dotfiles/.zprofile .zprofile`
 `mkdir -p ~/Library/Preferences/pnpm && ln -s ~/dotfiles/pnpm/rc ~/Library/Preferences/pnpm/rc`
 
 If you want Ghostty to pick up the colour scheme exported from iTerm, symlink the whole `ghostty` directory into `~/.config`:
