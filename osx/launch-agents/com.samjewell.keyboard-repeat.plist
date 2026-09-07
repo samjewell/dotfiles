@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.samjewell.keyboard-repeat</string>
+
+    <!--
+        Re-applies keyboard repeat settings at every login.
+
+        macOS Sequoia resets the com.apple.Accessibility domain values during
+        login, overriding any NSGlobalDomain keyboard repeat settings. The sleep
+        gives system daemons time to finish their own writes before we overwrite.
+    -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>
+            sleep 3;
+            defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;
+            defaults write NSGlobalDomain KeyRepeat -int 1;
+            defaults write NSGlobalDomain InitialKeyRepeat -int 10;
+            defaults write com.apple.Accessibility KeyRepeatEnabled -bool false;
+            defaults write com.apple.Accessibility KeyRepeatInterval -float 0.016666666;
+            defaults write com.apple.Accessibility KeyRepeatDelay -float 0.166666667
+        </string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>

@@ -51,6 +51,10 @@ If you want Ghostty to pick up the colour scheme exported from iTerm, symlink th
 `mkdir -p ~/.config && ln -s ~/dotfiles/ghostty ~/.config/ghostty`
 The theme file lives at `ghostty/themes/sj-iterm-2026` and is activated by the single `theme = sj-iterm-2026` line in `ghostty/config`. Note that the colours are Display P3 values, so they require `window-colorspace = display-p3` (set in the theme) to render identically to iTerm — this is macOS-only.
 
+Symlink and load the LaunchAgents (re-applies keyboard repeat settings at every login, needed on macOS Sequoia):
+`ln -sf ~/dotfiles/osx/launch-agents/com.samjewell.keyboard-repeat.plist ~/Library/LaunchAgents/com.samjewell.keyboard-repeat.plist`
+`launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.samjewell.keyboard-repeat.plist`
+
 Launch Sourcetree by right-clicking, and then choose "Open"
 That way you can open it, even when Apple doesn't trust it.
 
