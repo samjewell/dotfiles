@@ -6,6 +6,7 @@ brew tap caskroom/cask
 # Install packages
 apps=(
   claude-code
+  codex # GPTs CLI
   dropbox
   flycut # clipboard manager
   gcloud-cli
