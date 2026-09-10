@@ -42,10 +42,14 @@ Check to make sure you aren't going to overwrite (clobber) anything, then add sy
 `ln -s dotfiles/.irbrc .irbrc`
 `ln -s dotfiles/.pryrc .pryrc`
 `ln -s dotfiles/.gitignore_global .gitignore_global`
-`ln -s dotfiles/.npmrc .npmrc`
 `ln -s dotfiles/.zshenv .zshenv`
 `ln -s dotfiles/.zprofile .zprofile`
 `mkdir -p ~/Library/Preferences/pnpm && ln -s ~/dotfiles/pnpm/rc ~/Library/Preferences/pnpm/rc`
+
+Do **not** symlink `.npmrc`. Artifact Registry auth writes a short-lived token to the user npmrc, and a symlink would put that credential in this public repo. Set the policy keys instead — that leaves any existing token or other config intact:
+
+`npm config set ignore-scripts true`
+`npm config set min-release-age 7`
 
 If you want Ghostty to pick up the colour scheme exported from iTerm, symlink the whole `ghostty` directory into `~/.config`:
 `mkdir -p ~/.config && ln -s ~/dotfiles/ghostty ~/.config/ghostty`
