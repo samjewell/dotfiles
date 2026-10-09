@@ -24,6 +24,7 @@ arm_packages=(
   gpg # keys
   grafana-alloy
   # grafana/grafana/grafana-assistant
+  grafana/grafana/agento11y # CLI for the Grafana Agent Observability plugins
   grafana/grafana/gcx # Grafana Cloud CLI
   gron # grep for JSON
   jq
