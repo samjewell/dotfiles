@@ -31,7 +31,7 @@ arm_packages=(
   jsonnet-bundler
   # k3d # lightweight k8s distro, but don't need both this and minikube
   kubectl # K8s client
-  Azure/kubelogin/kubelogin # AKS auth plugin for kubectl (not core `kubelogin`, which is int128's OIDC plugin)
+  azure/kubelogin/kubelogin # AKS auth plugin for kubectl (not core `kubelogin`, which is int128's OIDC plugin)
   # istioctl
   # mysql-client@5.7
   node
@@ -64,9 +64,7 @@ arm_packages=(
   # wget
   # yarn # includes node
 )
-# Third-party taps must be tapped explicitly before installing from them
-brew tap Azure/kubelogin
-brew tap pulumi/tap
+# Fully-qualified `owner/tap/formula` entries above are auto-tapped by `brew install`
 brew install "${arm_packages[@]}"
 
 # Install Oh My Zsh, via curl (Big Sur includes Zsh by default now)
