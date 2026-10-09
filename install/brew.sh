@@ -30,12 +30,14 @@ arm_packages=(
   jsonnet-bundler
   # k3d # lightweight k8s distro, but don't need both this and minikube
   kubectl # K8s client
+  Azure/kubelogin/kubelogin # AKS auth plugin for kubectl (not core `kubelogin`, which is int128's OIDC plugin)
   # istioctl
   # mysql-client@5.7
   node
   pgrep # will also install pkill
   pinentry-mac # for gpg signing of commits
   prometheus
+  pulumi/tap/pulumi # infrastructure as code. Configure with Go instead of Terraform
   ripgrep # fast grep
   # ruby@2.7 # system ruby is 2.6
   sl # train animation for fun
@@ -61,6 +63,9 @@ arm_packages=(
   # wget
   # yarn # includes node
 )
+# Third-party taps must be tapped explicitly before installing from them
+brew tap Azure/kubelogin
+brew tap pulumi/tap
 brew install "${arm_packages[@]}"
 
 # Install Oh My Zsh, via curl (Big Sur includes Zsh by default now)
